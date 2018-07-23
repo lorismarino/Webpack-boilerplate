@@ -1,6 +1,6 @@
 const path = require('path')
 const merge = require('webpack-merge')
-const webpackConfig = require('./webpack.config')
+const webpackConfig = require('./webpack.common')
 const webpack = require('webpack')
 const ip = require('ip')
 
