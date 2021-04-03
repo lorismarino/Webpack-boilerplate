@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__content {
+    flex: 1;
+  }
+}

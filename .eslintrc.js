@@ -1,14 +1,12 @@
 module.exports = {
-	'env': {
-		'browser': true,
-    'es6': true
+  parserOptions: {
+    parser: 'babel-eslint',
   },
-	'extends': 'standard',
-  'parserOptions': {
-    'parser': 'babel-eslint',
-    'sourceType': 'module'
+  extends: [
+    'standard',
+    'plugin:prettier/recommended',
+  ],
+  rules: {
+    'no-new': 0,
   },
-  'rules': {
-    'no-new': 0
-  }
-}
+};

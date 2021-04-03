@@ -1,5 +1,8 @@
+# Custom
+dist
 
 # Created by https://www.gitignore.io/api/node,macos,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=node,macos,visualstudiocode
 
 ### macOS ###
 # General
@@ -36,6 +39,10 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
@@ -48,11 +55,12 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+*.lcov
 
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
 # Bower dependency directory (https://bower.io/)
@@ -71,6 +79,9 @@ jspm_packages/
 # TypeScript v1 declaration files
 typings/
 
+# TypeScript cache
+*.tsbuildinfo
+
 # Optional npm cache directory
 .npm
 
@@ -88,6 +99,7 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -98,11 +110,20 @@ typings/
 # nuxt.js build output
 .nuxt
 
+# react / gatsby
+public/
+
 # vuepress build output
 .vuepress/dist
 
 # Serverless directories
-.serverless
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
 
 ### VisualStudioCode ###
 .vscode/*
@@ -111,7 +132,8 @@ typings/
 !.vscode/launch.json
 !.vscode/extensions.json
 
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
 
 # End of https://www.gitignore.io/api/node,macos,visualstudiocode
-
-dist/
