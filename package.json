@@ -1,12 +1,16 @@
 {
   "name": "webpack-boilerplate",
+  "version": "2.0.0",
+  "description": "A starter pack for your modern projects.",
+  "author": "Loris Marino <loris.mro@gmail.com> (https://lorismarino.fr)",
+  "license": "MIT",
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --mode=development --config webpack.config.js",
     "prod": "webpack --mode=production --config webpack.config.js"
   },
-  "browserslist": [
-    "defaults"
-  ],
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
