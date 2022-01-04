@@ -1,0 +1,43 @@
+/**
+  * variables
+*/
+
+$transition: 0.3s ease-in-out;
+$gutter: 30px;
+
+/**
+  * Bootstrap variables
+ */
+
+// grid
+$grid-gutter-width: $gutter;
+$grid-breakpoints: (
+  xs: 0,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1100px,
+  xxl: 1285px,
+);
+
+// spacing
+$spacers: ();
+$spacers: map-merge((
+  0: 0,
+  5: rem(5),
+  10: rem(10),
+  15: rem(15),
+  20: rem(20),
+  25: rem(25),
+  30: rem(30),
+  40: rem(40),
+  50: rem(50),
+),
+$spacers);

@@ -1,0 +1,29 @@
+* {
+  color: inherit;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+button,
+input,
+textarea {
+  background-color: transparent;
+  border: 0;
+  font: inherit;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+svg {
+  fill: currentColor;
+  stroke: currentColor;
+}
